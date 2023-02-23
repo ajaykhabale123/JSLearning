@@ -65,7 +65,11 @@ var frdlist= myFriendList.split(" ");
 console.log(frdlist);
 console.log(frdlist.length);
 
+var str = "Angular Developer Champ";
 
+var splitResult= str.split(" ");
+console.log(splitResult, typeof splitResult);
+console.log("total Words:", splitResult.length);
 
 
 

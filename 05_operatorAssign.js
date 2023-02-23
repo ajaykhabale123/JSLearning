@@ -4,8 +4,7 @@ function squareOfWordLength(word){
     var squareLength= word.length**2;
     console.log(`Given String: ${word}`);
     console.log(`length of String is:${length}`);
-    return squareLength
-    
+    return squareLength   
 }
 var squareLengthResult= squareOfWordLength("Javascript")
 console.log(`Square of Length is:${squareLengthResult}`);
@@ -27,4 +26,3 @@ function divideOfMulti (){
     console.log(`String multiply by total word ${lengthString*noOfWord}`);
 }
 divideOfMulti()
-
