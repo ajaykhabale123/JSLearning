@@ -35,16 +35,3 @@ console.log("String ends with word 'up':",includesUp);
 console.log("**********Step 10**********");
 var includesHey= trimResult.startsWith("Hey");
 console.log("String starts with word 'Hey':",includesHey);
-
-
-
-
-
-
-
-
-
-
-
-
-

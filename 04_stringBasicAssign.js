@@ -3,6 +3,7 @@ function stringBasics (){
     console.log('My dream company is "Infosys" ');
 };
 stringBasics ();
+
 console.log("********Step 2********");
 var myHobby1= "Trekking,";
 var myHobby2= "Browsing Network,";

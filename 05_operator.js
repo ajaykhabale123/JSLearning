@@ -77,3 +77,7 @@ function wordLength(word){
   var result = maleMarriageEligibility("Male", 25, "Billgates");
   console.log(result);
 
+  console.log("Difference between == and === ");
+  var num1 = 10;
+  var num2 = "10";
+  console.log(num1==num2); 
