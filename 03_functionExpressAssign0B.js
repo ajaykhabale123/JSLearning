@@ -1,7 +1,7 @@
 console.log(`=========== Function Expression with if else statement  ============`)
 var check_leap_year = function (leap_year) {
   if (
-    leap_year == 'Number' ||
+    leap_year == 'number' ||
     leap_year == undefined ||
     isNaN(leap_year) ||
     leap_year == null
@@ -17,13 +17,13 @@ var check_leap_year = function (leap_year) {
   }
 }
 
-check_leap_year(2020)
-check_leap_year(1999)
-check_leap_year(1600)
-check_leap_year(2022)
-check_leap_year(1945)
-check_leap_year(null)
-check_leap_year('Twenty Twenty')
-check_leap_year(undefined)
-check_leap_year(NaN)
-check_leap_year(1750)
+check_leap_year(2020);
+check_leap_year(1999);
+check_leap_year(1600);
+check_leap_year(2022);
+check_leap_year(1945);
+check_leap_year(null);
+check_leap_year('Twenty Twenty');
+check_leap_year(undefined);
+check_leap_year(NaN);
+check_leap_year(1750);
