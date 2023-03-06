@@ -28,6 +28,6 @@ console.log(numFormat, typeof numFormat);
 
 
 const num3= 100;
-if(num3>=0 && num3%2==0){
+if(num3>=0 && num3%2==0 && typeof (num3) == "number"){
 console.log(true);
 }
