@@ -107,3 +107,29 @@ var arrayOfNumbers= [10, 20, 25, 15, 40, 45];
 console.log(arrayOfNumbers);
 arrayOfNumbers.splice(2,2 ,50,60)
 console.log(arrayOfNumbers);
+
+console.log("=========Traversing==========");
+var arrayOfNumbers = [10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index];
+    console.log(element);
+}
+
+console.log("=========Sum of Elements ==========");
+var arrayOfNumbers = [10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+let sum = 0;
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index];
+    sum = sum + element;
+}
+console.log(`Sum of an array element is : ${sum}`);
+
+console.log("=========Sum of even Elements ==========");
+var arrayOfNumbers = [10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+let sumOfEven = 0;
+for (let index = 0; index < arrayOfNumbers.length; index= index+2) {
+    const element = arrayOfNumbers[index];
+    sumOfEven = sumOfEven + element;
+}
+console.log(`Sum of an array even element is : ${sumOfEven}`);
+
