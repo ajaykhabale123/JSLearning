@@ -64,7 +64,7 @@ for (let index = 1; index < arrayNumbers.length; index = index + 2) {
 console.log(`1.7] All Odd positioning elements: ${array}`)
 console.log(`     Sum of an Odd positioning elements is : ${sumOfOdd}`)
 console.log(
-  '------------------------------------------------------------------',
+  '------------------------------------------------------------------'
 )
 let sumOfElements = 0
 for (let index = 0; index < arrayNumbers.length; index++) {
