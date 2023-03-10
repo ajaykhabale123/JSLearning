@@ -59,4 +59,6 @@ const yesBank = {
     )
   },
 }
-yesBank.showdetails()
+yesBank.showdetails();
+
+
