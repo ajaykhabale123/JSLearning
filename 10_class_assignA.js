@@ -1,5 +1,4 @@
-console.log('============= Step 1 =============')
-console.log('============= Vehicle =============')
+console.log('============= Step 1 : Vehicle =============')
 class Vehicle {
   constructor(company, model, type, mileage, seatingCapacity) {
     this.company = company
@@ -23,26 +22,29 @@ const mahindra = new Vehicle('Mahindra', 'XUV 300', 'Diesel', '17 kmpl', '5')
 
 const arrayOfVehicles = [nexon, swift, grandi10, kia, mahindra]
 for (const vehicles of arrayOfVehicles) {
-  console.log(vehicles)
+  console.log(vehicles);
+}
+console.log("================================================================================");
+for (let index = 0; index < arrayOfVehicles.length; index++) {
+  const element = arrayOfVehicles[index];
+  console.log(`Vehicle Details : Company : ${element.company}, Model : ${element.model}, Type : ${element.type}, Average : ${element.mileage}, Seats : ${element.seatingCapacity}`);
 }
 
-console.log('============= Step 2 & 3 =============')
-console.log('============= College =============')
+console.log('============= Step 2 & 3 : College =============')
+
 class College {
   constructor(
     collegeName,
     location,
     collegeGrade,
     facilityOfHostel,
-    principal,
-    studentCapacity,
+    
   ) {
     this.collegeName = collegeName
     this.location = location
     this.collegeGrade = collegeGrade
     this.facilityOfHostel = facilityOfHostel
-    this.principal = principal
-    this.studentCapacity = studentCapacity
+    
   }
 }
 const coep = new College(
@@ -50,41 +52,42 @@ const coep = new College(
   'Pune',
   'A+',
   true,
-  'Dr. Bharatkumar Ahuja',
-  '1200',
+  
 )
-const pict = new College('PICT', 'Pune', 'A+', true, 'R.Sreemathy', '2500')
+const pict = new College('PICT', 'Pune', 'A+', true, )
 const sinhgad = new College(
   'SCOE',
   'Pune',
   'A+',
   true,
-  'Dr. S.D.Lokhande',
-  '4000',
+  
 )
 const vjti = new College(
-  'vJTI',
+  'VJTI',
   'Mumbai',
   'A+',
   false,
-  'Sunil G. Bhirud',
-  '5000',
+ 
 )
 
+
 function traverseObject(property) {
-  collegeArray = []
   for (const key in property) {
     if (Object.hasOwnProperty.call(property, key)) {
       const element = property[key]
-      collegeArray.push(`${key}: ${element}`)
+      console.log(`${key}: ${element}`)
     }
   }
-  console.log(collegeArray)
+  
 }
-traverseObject(coep)
-traverseObject(pict)
-traverseObject(sinhgad)
-traverseObject(vjti)
+traverseObject(coep);
+console.log("================================================================================");
+traverseObject(pict);
+console.log("================================================================================");
+traverseObject(sinhgad);
+console.log("================================================================================");
+traverseObject(vjti);
+console.log("================================================================================");
 
 console.log('============= Step 4 =============')
 function primeOrNot(num) {
