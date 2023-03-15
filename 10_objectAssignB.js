@@ -12,8 +12,8 @@ const bankLocation = {
 console.log(
   '------------ Clonning object by using Object.assign --------------',
 )
-const objectAssignBankSbi = Object.assign(bankSbi)
-const objectAssignBankLocation = Object.assign(bankLocation)
+const objectAssignBankSbi = Object.assign({}, bankSbi)
+const objectAssignBankLocation = Object.assign({}, bankLocation)
 console.log(
   `Bank Name : ${objectAssignBankSbi.bankName}, IFSC : ${objectAssignBankSbi.ifsc}, Account No : ${objectAssignBankSbi.accountNo}, Branch Code : ${objectAssignBankSbi.branchCode}`,
 )
@@ -37,14 +37,17 @@ const rateOfInterest = {
   personalLoanInterest: 8,
   dueInterest: 15,
 }
-console.log('------------ Merged All Objects --------------')
+console.log('------------ Merged All Objects using Object.Assign --------------')
 
-const mergedObject = Object.assign(bankSbi, bankLocation, rateOfInterest)
-console.table(mergedObject)
+const sbiDetails = Object.assign({},bankSbi, bankLocation, rateOfInterest)
+console.table(sbiDetails)
 console.log('------------ Traverse Object using loop --------------')
-for (const key in mergedObject) {
-  if (Object.hasOwnProperty.call(mergedObject, key)) {
-    const element = mergedObject[key]
+for (const key in sbiDetails) {
+  if (Object.hasOwnProperty.call(sbiDetails, key)) {
+    const element = sbiDetails[key]
     console.log(`${key}: ${element}`)
   }
 }
+console.log("Merged By Using spread operator");
+const result = {...bankSbi, ...bankLocation, ...rateOfInterest}
+console.table(result);
