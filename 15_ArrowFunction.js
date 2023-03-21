@@ -6,7 +6,7 @@ show();
 
 let show_ = ()=> console.log("Arrow Function");
 
-show();
+show_();
 
 
 // Arrow function with arguments and no return value
