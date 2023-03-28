@@ -13,3 +13,11 @@ let multiple5 = arrayNumbers.filter(element => element%5==0)
     return runningTotal + value
 })
 console.log(multiple5);
+
+let adress = {
+    city : "pune",
+    PIN : 431202
+}
+adress.street = "Wakad"
+let newAdress = {...adress};
+console.log(newAdress);

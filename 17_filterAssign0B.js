@@ -34,8 +34,8 @@ class Employee {
   console.log("Condition 2] ==> Find the average salary from company Wipro");
 const wiproEmployees = employees.filter(employe => employe.emp_company=="Wipro")
 const average = wiproEmployees.reduce((currentvalue, value)=>{
-  return currentvalue.emp_salary + value.emp_salary
-});
+  return currentvalue + value.emp_salary
+},0);
 console.log("The average salary of Wipro employees is :",average/wiproEmployees.length);
 console.log("=====================================================");
 console.log("Condition 3] ==> Find the average salary from company Wipro and Infy");
