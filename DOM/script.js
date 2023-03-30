@@ -53,3 +53,44 @@ console.log('=========Changing the CSS properties of an element =====')
 const elementMyProfile = document.querySelector("#profile");
 elementMyProfile.style.color = "rgb(6, 206, 190)"
 elementMyProfile.style.fontFamily = 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans' ;
+
+
+console.log("========= Adding Elemement ========");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
+elementDiv.appendChild(elementP);
+
+// document.body.appendChild();
+console.log("===== Event ======");
+function show (){
+  console.log( "Click event...... ");
+}
+
+const elementAddress = document.querySelector("#address");
+elementAddress.addEventListener("click",()=>{
+    console.log("Listening click event");
+   // alert("You have cliclked on address")
+   const inputVAlue = prompt("This is the title", "Default Value");
+   console.log(inputVAlue);
+});
+
+elementAddress.addEventListener("mouseover",()=>{
+  console.log("Mouse over......");
+  elementAddress.style.color= "red"
+});
+
+const isEvenButton = document.querySelector("#isEventButton");
+isEvenButton.addEventListener("click",()=>{
+   const inputValue=  prompt("Please Enter number to check", 0)
+   console.log(inputValue);
+  const result =  inputValue%2==0 ? true : false 
+  if(result){
+    alert("Given Number is Even");
+
+  }else{
+    alert("Given number is Odd")
+  }
+})
+

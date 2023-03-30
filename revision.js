@@ -31,3 +31,13 @@ const num3= 100;
 if(num3>=0 && num3%2==0 && typeof (num3) == "number"){
 console.log(true);
 }
+
+let num  = '1000';
+let explicit = +num;
+console.log(num, typeof num);
+console.log(explicit, typeof explicit);
+
+let myNumber = 100 ;
+console.log(typeof myNumber, myNumber); 
+let conversion = myNumber.toString();
+console.log(typeof conversion, conversion);

@@ -1,3 +1,4 @@
+//we  can access the variable before declaring it
 console.log(myName);// Allowed to access
 //console.log(age); // Not allowed to acess
 var myName = "Virat Kohli";
