@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 0B</title>
+</head>
+<body>
+    <button type="button" id="btn"> Add Hobbies </button>
+    <div id="hobbies">
+        
+    </div>
+    <script>
+        console.log("====== Adding element hobbies ======");
+        const divTag = document.querySelector("#hobbies");
+        const pElement = document.createElement("p");
+        const textElement = document.createTextNode("Trekking");
+        pElement.appendChild(textElement);
+        divTag.appendChild(pElement);
+        const p2Element = document.createElement("p");
+        const text2Element = document.createTextNode("Listening Music");
+        p2Element.appendChild(text2Element);
+        divTag.appendChild(p2Element);
+        const p3Element = document.createElement("p");
+        const text3Element = document.createTextNode("Browsing Internet")
+        p3Element.appendChild(text3Element);
+        divTag.appendChild(p3Element);
+        const button = document.querySelector("#btn")
+        button.addEventListener("click",()=>{
+        const text = document.querySelector("#hobbies");
+        console.log(text.innerHTML);
+})
+    </script>
+</body>
+</html>

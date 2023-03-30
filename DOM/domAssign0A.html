@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Assignment 0A </title>
+</head>
+<body>
+    <div id="divTag">
+        <button type="button" id="isPrimeNumber">Check Number is Prime or Not </button>
+    </div>
+    <script>
+        const isPrimeNumber = document.querySelector("#isPrimeNumber");
+        isPrimeNumber.addEventListener("click", ()=>{ 
+   let number =  prompt("Please Enter positive number");
+    let isPrime = true;
+     if (number > 1 ) {
+        
+        for (let index = 2; index < number; index++) {
+               if (number%index==0) {
+                isPrime= false;
+                break ;   
+             }
+         }
+            
+        if (isPrime) {
+                console.log(`${number} is a prime number`);
+        } else{
+            console.log(`${number} is not a prime number`);
+        }
+    }
+        })
+
+    </script>
+</body>
+</html>
