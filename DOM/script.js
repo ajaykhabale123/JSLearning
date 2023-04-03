@@ -76,43 +76,35 @@ elementAddress.addEventListener("click",()=>{
    console.log(inputVAlue);
 });
 
-// elementAddress.addEventListener("mouseover",()=>{
-//   console.log("Mouse over......");
-//   elementAddress.style.color= "red"
-// });
+elementAddress.addEventListener("mouseover",()=>{
+  console.log("Mouse over......");
+  elementAddress.style.color= "red"
+});
 
 const isEvenButton = document.querySelector("#isEventButton");
 isEvenButton.addEventListener("click",()=>{
-   const inputValue=  prompt("Please Enter number to check", 0)
-   console.log(inputValue);
-  const result =  inputValue%2==0 ? true : false 
-  if(result){
-    alert("Given Number is Even");
+   const inputValue=  prompt("Please Enter number to check", 0);
+   const givenNumber = +inputValue;
+   if (inputValue == null || isNaN(givenNumber)|| givenNumber<0) {
+     alert("Invalid Value");
+   }else{
+      const result =  inputValue%2==0 ? true : false 
+      if(result){
+        alert("Given Number is Even");
+    
+      }else{
+        alert("Given number is Odd")
+      }
+   }
+ 
+ })
 
-  }else{
-    alert("Given number is Odd")
-  }
-})
-console.log("====== Adding element hobbies ======");
-const divTag = document.querySelector("#hobbies");
-const pElement = document.createElement("p");
-const textElement = document.createTextNode("Trekking");
-pElement.appendChild(textElement);
-divTag.appendChild(pElement);
-const p2Element = document.createElement("p");
-const text2Element = document.createTextNode("Listening Music");
-p2Element.appendChild(text2Element);
-divTag.appendChild(p2Element);
-const p3Element = document.createElement("p");
-const text3Element = document.createTextNode("Browsing Internet")
-p3Element.appendChild(text3Element);
-divTag.appendChild(p3Element);
+ const confirmElement = document.querySelector("#confirm");
+ confirmElement.addEventListener("click", ()=>{
+   const result =  confirm("Are you sure..")
+   console.log(result);
+ })
 
-const button = document.querySelector("#btn")
-button.addEventListener("click",()=>{
-  const text = document.querySelector("#hobbies");
-  console.log(text.innerHTML);
-})
 
 
 

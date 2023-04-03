@@ -5,7 +5,7 @@ const employee = {
   city: 'Silicon Valley',
 }
 console.log('How to traverse Object')
-for (const key in employee) {
+for (const key in employee) { 
   if (Object.hasOwnProperty.call(employee, key)) {
     const element = employee[key]
     console.log(key, element)

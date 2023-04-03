@@ -27,5 +27,5 @@ function firstclass (){
     return innerFunction
  }
 const inner = firstclass()
-inner();
+ inner();
 firstclass()();

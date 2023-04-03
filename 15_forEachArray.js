@@ -27,6 +27,11 @@ array.forEach((element,index) => {
        console.log(element); 
     }
 });
+array.forEach(element =>  {
+    if (element%5==0) {
+        console.log(element);
+    }
+});
 
 
 

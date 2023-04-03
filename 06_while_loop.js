@@ -26,3 +26,4 @@ while (index<arrayOfNumbers.length) { // condition
     }
     index++; // Update Expression
 }
+console.log(sum)
